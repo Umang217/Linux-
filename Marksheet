@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Enter marks for Subject 1: "
+read s1
+echo "Enter marks for Subject 2: "
+read s2
+echo "Enter marks for Subject 3: "
+read s3
+
+total=$((s1 + s2 + s3))
+percentage=$((total / 3))
+
+echo "Total Marks: $total"
+echo "Percentage: $percentage%"
+
+if [ $percentage -ge 40 ]
+then
+    echo "Result: PASS"
+else
+    echo "Result: FAIL"
+fi
